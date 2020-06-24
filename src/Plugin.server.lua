@@ -119,7 +119,9 @@ local function getPluginSaveData(pluginBase)
 		local descendants = pluginInstance:GetDescendants()
 		descendants[#descendants + 1] = pluginInstance
 		for _, object in next, descendants do
-			if (object:IsA('Script') or object:IsA('LocalScript')) and not object.Disabled then
+			local isScript = (object:IsA('Script') or object:IsA('LocalScript')) and not object.Disabled
+			local isModule = object:IsA('ModuleScript')
+			if isScript or isModule then
 				dictionary[getScriptHash(object.Source)] = true
 			end
 		end
