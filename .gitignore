@@ -1,0 +1,6 @@
+*.DS_Store
+/.vscode
+ServerPackages
+ClientPackages
+**/*.rbxlx.lock
+**/*.rbxl.lock

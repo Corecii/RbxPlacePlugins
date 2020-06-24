@@ -1,0 +1,12 @@
+{
+  "name": "PlacePlugins",
+  "tree": {
+    "$className": "DataModel",
+    "ServerStorage": {
+      "$className": "ServerStorage",
+      "PlacePluginsPlugin": {
+        "$path": "src"
+      }
+    }
+  }
+}
